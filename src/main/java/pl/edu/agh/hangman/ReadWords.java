@@ -35,7 +35,6 @@ public class ReadWords {
 			br = new BufferedReader(new FileReader(wordsFile));
 			String contentLine = br.readLine();
 			while (contentLine != null) {
-				System.out.println(contentLine);
 				wordsList.add(contentLine);
 				contentLine = br.readLine();
 			}
