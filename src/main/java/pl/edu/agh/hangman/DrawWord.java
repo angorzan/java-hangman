@@ -15,7 +15,7 @@ public class DrawWord {
 	public void setSelectedWord(String selectedWord) {
 		this.selectedWord = selectedWord;
 	}
-
+	
 	public DrawWord() {
 		this.selectedWord = drawWord();
 	}
