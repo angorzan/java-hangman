@@ -8,11 +8,6 @@ public class DrawWord {
 
 	private String selectedWord;
 
-	
-	public static void main(String args[]){
-		drawWord();
-	}
-	
 	public String getSelectedWord() {
 		return selectedWord;
 	}
@@ -22,7 +17,7 @@ public class DrawWord {
 	}
 
 	public DrawWord() {
-		selectedWord = drawWord();
+		this.selectedWord = drawWord();
 	}
 
 	private static String drawWord() {
@@ -34,7 +29,7 @@ public class DrawWord {
 
 		int randomNumber = random.nextInt(wordsList.size());
 		String randomWord = wordsList.get(randomNumber);
-		System.out.print(randomWord);
+
 		return randomWord;
 	}
 }

@@ -7,15 +7,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ReadWords {
-		
+
 	private List<String> wordsList;
-	
+
 	public ReadWords() {
-	
+
 		wordsList = new ArrayList<String>();
-		wordsList = readFile("src/main/resources/words.txt");	
+		this.wordsList = readFile("src/main/resources/words.txt");
 	}
 
 	public List<String> getWordsList() {
@@ -28,7 +27,7 @@ public class ReadWords {
 
 	private static List<String> readFile(String filename) {
 		List<String> wordsList = new ArrayList<String>();
-		
+
 		File wordsFile = new File(filename);
 		BufferedReader br = null;
 		try {
@@ -39,9 +38,9 @@ public class ReadWords {
 				contentLine = br.readLine();
 			}
 		} catch (IOException x) {
-			System.err.format("IOException: %s", x); 
+			System.err.format("IOException: %s", x);
 		}
-		
+
 		return wordsList;
 	}
 }
