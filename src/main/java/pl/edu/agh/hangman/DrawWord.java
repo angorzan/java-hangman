@@ -8,6 +8,11 @@ public class DrawWord {
 
 	private String selectedWord;
 
+	
+	public static void main(String args[]){
+		drawWord();
+	}
+	
 	public String getSelectedWord() {
 		return selectedWord;
 	}
