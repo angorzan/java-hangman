@@ -2,15 +2,21 @@ package pl.edu.agh.hangman;
 
 public class DrawImage {
 	
-	public int numberOfGuess;
-	public static int numberOfBadTries = 0;
-	public static int counter = 0;
+	public static int getNumberOfBadTries() {
+		return numberOfBadTries;
+	}
+
+	public static void setNumberOfBadTries(int numberOfBadTries) {
+		DrawImage.numberOfBadTries = numberOfBadTries;
+	}
+
+	private static int numberOfBadTries = 0;
 	
 	public static void drawImage(String guessWord) {
 		
 		int numberOfHangmanImage = Hangman.HANGMANPICS.length;
 	
-		if(numberOfBadTries == 1 && numberOfBadTries < numberOfHangmanImage) {
+		if(C == 1 && numberOfBadTries < numberOfHangmanImage) {
 			System.out.print(Hangman.HANGMANPICS[0]);
 		} 
 			else if(numberOfBadTries == 2 && numberOfBadTries < numberOfHangmanImage) {
