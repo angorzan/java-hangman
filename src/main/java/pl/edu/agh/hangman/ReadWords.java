@@ -7,12 +7,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ReadWords {
-	public static void main(String[] args) throws Exception {
-		readFile("src/main/resources/words.txt");
+		
+	private List<String> wordsList;
+	
+	public ReadWords() {
+	
+		wordsList = new ArrayList<String>();
+		wordsList = readFile("src/main/resources/words.txt");	
 	}
 
-	private static List<String> readFile(String filename) throws Exception {
+	public List<String> getWordsList() {
+		return wordsList;
+	}
+
+	public void setWordsList(List<String> wordsList) {
+		this.wordsList = wordsList;
+	}
+
+	private static List<String> readFile(String filename) {
 		List<String> wordsList = new ArrayList<String>();
 		
 		File wordsFile = new File(filename);
@@ -28,6 +42,7 @@ public class ReadWords {
 		} catch (IOException x) {
 			System.err.format("IOException: %s", x); 
 		}
+		
 		return wordsList;
 	}
 }
