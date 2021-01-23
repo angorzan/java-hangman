@@ -21,7 +21,7 @@ public class ReadWords {
 				contentLine = br.readLine();
 			}
 		} catch (IOException x) {
-			System.err.format("IOException: %s", x);
+			System.err.format("IOException: %s", x); 
 		}
 	}
 }
