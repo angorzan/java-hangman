@@ -15,7 +15,7 @@ public class DrawWord {
 	public void setSelectedWord(String selectedWord) {
 		this.selectedWord = selectedWord;
 	}
-
+	
 	public DrawWord() {
 		this.selectedWord = drawWord();
 	}
@@ -29,7 +29,7 @@ public class DrawWord {
 
 		int randomNumber = random.nextInt(wordsList.size());
 		String randomWord = wordsList.get(randomNumber);
-		System.out.print(randomWord);
+
 		return randomWord;
 	}
 }
