@@ -66,7 +66,7 @@ public class DrawImage {
 	private static int numberOfBadTries = 0;
 	
 	
-	public static void drawImage(String guessWord) {
+	public void drawImage(String guessWord) {
 		
 //		int numberOfHangmanImage = Hangman.HANGMANPICS.length;
 	
