@@ -7,6 +7,11 @@ import java.util.Random;
 public class DrawWord {
 
 	private String selectedWord;
+	
+	public DrawWord() {
+		selectedWord = new String();
+		this.selectedWord = drawWord();
+	}
 
 	public String getSelectedWord() {
 		return selectedWord;
@@ -16,10 +21,6 @@ public class DrawWord {
 		this.selectedWord = selectedWord;
 	}
 	
-	public DrawWord() {
-		this.selectedWord = drawWord();
-	}
-
 	private static String drawWord() {
 		Random random = new Random();
 

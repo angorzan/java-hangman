@@ -7,8 +7,8 @@ public class DataFromUser {
 	private String letter;
 
 	public DataFromUser() {
-		this.letter = new String();
-		letter = getLetterByScanner();
+		letter = new String();
+		this.letter = getLetterByScanner();
 	}
 
 	public String getLetter() {
@@ -16,7 +16,7 @@ public class DataFromUser {
 	}
 
 	public void setLetter(String letter) {
-		this.letter = getLetterByScanner();
+		this.letter = letter;
 	}
 
 	private static String getLetterByScanner() {
